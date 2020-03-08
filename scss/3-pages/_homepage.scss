@@ -2,12 +2,23 @@ body {
 font-family: $main;
 background-color: $red;
 background-image: url(/images/bg-intro-mobile.png);
+overflow: hidden;
+
+@media (min-width: 970px){
+    background-image: url(/images/bg-intro-desktop.png);
+}
+
 }
 
 .main_wrapper{
     max-width: 400px;
     margin: 0 auto;
     padding: 100px 20px 60px 20px;
+
+    @media (min-width: 1024px){
+        max-width: 1110px;
+        padding: 120px 160px;
+    }
 }
 
 .flex_container{
@@ -15,6 +26,11 @@ background-image: url(/images/bg-intro-mobile.png);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: 1024px){
+        flex-direction: row;
+        
+ }
 
     .left_text{
         margin-bottom: 50px;
@@ -24,6 +40,7 @@ background-image: url(/images/bg-intro-mobile.png);
             font-size: 36px;
             padding: 0px 40px;
             margin-bottom: 20px;
+
         }
 
         p{
@@ -32,6 +49,23 @@ background-image: url(/images/bg-intro-mobile.png);
             font-size: 16px;
             text-align: center;
         }
+
+        @media (min-width:1024px) {
+            margin-right: 120px;
+
+            h1{
+                text-align: left;
+                font-size: 48px;
+                padding-left: 0;
+            }
+
+            p{
+                text-align: left;
+                line-height: 1.75;
+            }
+            
+        }
+
     }
 
     .right_form_box{
@@ -112,6 +146,13 @@ background-image: url(/images/bg-intro-mobile.png);
                 }
             }
        
+        }
+
+        @media (min-width: 1024px){
+
+            .purple_btn {
+                padding: 10px;
+            }
         }
     }
 }

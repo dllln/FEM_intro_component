@@ -228,12 +228,26 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #ff7a7a;
   background-image: url(/images/bg-intro-mobile.png);
+  overflow: hidden;
+}
+
+@media (min-width: 970px) {
+  body {
+    background-image: url(/images/bg-intro-desktop.png);
+  }
 }
 
 .main_wrapper {
   max-width: 400px;
   margin: 0 auto;
   padding: 100px 20px 60px 20px;
+}
+
+@media (min-width: 1024px) {
+  .main_wrapper {
+    max-width: 1110px;
+    padding: 120px 160px;
+  }
 }
 
 .flex_container {
@@ -250,6 +264,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .flex_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .flex_container .left_text {
@@ -269,6 +292,21 @@ body {
   line-height: 1.5;
   font-size: 16px;
   text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .flex_container .left_text {
+    margin-right: 120px;
+  }
+  .flex_container .left_text h1 {
+    text-align: left;
+    font-size: 48px;
+    padding-left: 0;
+  }
+  .flex_container .left_text p {
+    text-align: left;
+    line-height: 1.75;
+  }
 }
 
 .flex_container .right_form_box .purple_btn {
@@ -352,5 +390,11 @@ body {
   font-size: 14px;
   float: right;
   padding-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+  .flex_container .right_form_box .purple_btn {
+    padding: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
