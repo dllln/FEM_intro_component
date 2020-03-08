@@ -119,10 +119,17 @@ overflow: hidden;
                     text-align: center;
                     font-size: 14px;
                     margin: 20px 60px 0px 60px;
+                    color: #d3d3d3;
 
                     span.red{
                         color: $red;
                         cursor: pointer;
+                    }
+
+                    @media (min-width: 1024px) {
+                        text-align: left;
+                        font-size: 10px;
+                        margin: 20px 30px 0px 30px;
                     }
                 }
 

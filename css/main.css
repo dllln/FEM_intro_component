@@ -369,11 +369,20 @@ body {
   text-align: center;
   font-size: 14px;
   margin: 20px 60px 0px 60px;
+  color: #d3d3d3;
 }
 
 .flex_container .right_form_box .form_container form p span.red {
   color: #ff7a7a;
   cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .flex_container .right_form_box .form_container form p {
+    text-align: left;
+    font-size: 10px;
+    margin: 20px 30px 0px 30px;
+  }
 }
 
 .flex_container .right_form_box .form_container form input.error {
