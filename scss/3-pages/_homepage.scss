@@ -1,0 +1,117 @@
+body {
+font-family: $main;
+background-color: $red;
+background-image: url(/images/bg-intro-mobile.png);
+}
+
+.main_wrapper{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 100px 20px 60px 20px;
+}
+
+.flex_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .left_text{
+        margin-bottom: 50px;
+        h1{
+            color: #ffff;
+            text-align: center;
+            font-size: 36px;
+            padding: 0px 40px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            color: #fff;
+            line-height: 1.5;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    .right_form_box{
+        
+        .purple_btn{
+            color: #fff;
+            background-color: $purple;
+            text-align: center;
+            line-height: 1.5;
+            padding: 15px 80px;
+            border-radius: 10px;;
+            margin-bottom: 40px;
+            box-shadow: 0px 10px 4px -1px rgba(0,0,0,0.25);
+
+        }
+
+        .form_container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            border-radius: 5px;
+
+            form{
+                padding: 30px;
+
+                input[type=text],
+                input[type=email]{
+                    padding: 20px 180px 20px 20px;
+                    border: 1px solid #dfdfdf;
+                    border-radius: 5px;
+                    margin-bottom: 15px;
+                }
+
+                .button_success{
+                    background-color: $green;
+                    color: #fff;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    padding: 20px 60px;
+                    border: none;
+                    border-radius: 5px;
+                    box-shadow: 0px 5px 2px rgba(0,0,0,0.25);
+                    cursor: pointer;
+                    
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 14px;
+                    margin: 20px 60px 0px 60px;
+
+                    span.red{
+                        color: $red;
+                        cursor: pointer;
+                    }
+                }
+
+                // form error validation 
+
+                input.error {
+                    border: 1px solid $red;
+                    color: $red;
+                    background-image: url('/images/icon-error.svg');
+                    background-repeat: no-repeat;
+                    background-position: right center;
+                    background-position-x: 95%;
+                    
+                }
+
+                label.error {
+                    color: $red;
+                    font-size: 14px;
+                    float: right;
+                    padding-bottom: 10px;
+                }
+            }
+       
+        }
+    }
+}
