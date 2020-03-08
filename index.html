@@ -19,20 +19,20 @@
             </div>
             <div class="right_form_box">
                 <div class="purple_btn">
-                    <p><strong>Try it free 7 days</strong>then $20/mo. thereafter </p>
+                    <p><strong>Try it free 7 days</strong> then $20/mo. thereafter </p>
                 </div>
                 
         
                 <div class="form_container">
-                    <form>
-                        <input type="text" id="fname" name="fname" value="First Name"><br>
-                        <input type="text" id="lname" name="lname" value="Last Name"><br>
-                        <input type="text" id="email" name="email" value="Email Adress"><br>
-                        <input type="text" id="password" name="pword" value="Password"><br>
-                      </form>
-                      <a href="" class="button_success">Claim your free trial 
-                    </a>
-                      <p> By clicking the button, you are agreeing to our <span class="red">Terms and Services</span></p>
+                    <form id="basic_form" action=" " method="POST">
+                        <input type="text" label="firstName" id="fname" name="fname" placeholder="First Name" minlength="2" required>   <br>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" minlength="2" required><br>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required><br>
+                        <input type="text" id="password" name="pword" placeholder="Password" minlength="6" required><br>
+                        <input type="submit" class="button_success "value="claim your free trial now">
+
+                        <p> By clicking the button, you are agreeing to our <span class="red">Terms and Services</span></p>
+                      </form> 
                 </div>
         
             </div>
@@ -40,6 +40,8 @@
     </div>
     
 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
     <script src="/js/main.js"></script>
 </body>
