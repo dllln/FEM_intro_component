@@ -2,7 +2,6 @@ body {
 font-family: $main;
 background-color: $red;
 background-image: url(/images/bg-intro-mobile.png);
-overflow: hidden;
 
 @media (min-width: 970px){
     background-image: url(/images/bg-intro-desktop.png);
